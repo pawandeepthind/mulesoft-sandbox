@@ -5,7 +5,7 @@ Dev machine setup for Mulesoft API presentation. This machine will host the mysq
 
 # Steps
 
-## 1. Here are some of the pre-requisite (Note: It is tested on Mac OS X for now)
+1. Here are some of the pre-requisite (Note: It is tested on Mac OS X for now)
   * Install latest vagrant
   * Install latest virtual Box
   * Install plugins (vbguest and hostmanager)
@@ -15,33 +15,33 @@ Dev machine setup for Mulesoft API presentation. This machine will host the mysq
   $ vagrant plugin install vagrant-hostmanager
   ```
 
-## 2. Checkout the code
+2. Checkout the code
 
   ```
   $ git clone https://github.com/pawandeepthind/mulesoft-sandbox.git
   ```
     
-## 3. Change directory to mulesoft-sandbox/sandbox
+3. Change directory to mulesoft-sandbox/sandbox
 
   ```
   $ cd mulesoft-sandbox/sandbox
   ```
 
-## 4. Execute vagrant up command (Note: This command may take some time for the first time, 10-15 mins)
+4. Execute vagrant up command (Note: This command may take some time for the first time, 10-15 mins)
 
   ```
   $ vagrant up
   ```
 
-## 5. Import inventory project to anypoint studio using mulesoft-sandbox/inventory/pom.xml
+5. Import inventory project to anypoint studio using mulesoft-sandbox/inventory/pom.xml
 
-## 6. Right click on the imported inventory project and Validate in console that application is deployed successfully
+6. Right click on the imported inventory project and Validate in console that application is deployed successfully
 
     ```
     Right click on inventory project > Run As > Mule Application with Maven,
     ```
 
-## 7. Call API using following specification
+7. Call API using following specification
 
   ```
   POST /api/findinstore HTTP/1.1
