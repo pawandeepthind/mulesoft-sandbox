@@ -1,0 +1,21 @@
+#%RAML 1.0 Library
+
+usage: This library defines API specific data types
+
+types:  
+  findinstore-json-request:
+    type: object
+    displayName: findinstore-json-request
+    properties:
+      country: 
+        type: string 
+        displayName: country
+        required: true
+      postal_code:
+        type: string
+        displayName: postal_code
+        required: true
+      itemids:
+        type: string[]
+        displayName: itemids
+        required: true

@@ -1,0 +1,11 @@
+**/bin/*
+.DS_Store
+.metadata/*
+studio_id.xml
+.mule/
+*/target/*
+**/catalog/types/*
+**/mqjms.log.0*
+**/.classpath
+.classpath
+**/catalog/*.json

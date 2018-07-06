@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns:file="http://www.mulesoft.org/schema/mule/file"
+	xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:sftp="http://www.mulesoft.org/schema/mule/sftp"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/sftp http://www.mulesoft.org/schema/mule/sftp/current/mule-sftp.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-current.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	<context:property-placeholder location="application.${env}.properties" />
+	<sftp:connector name="SFTP" validateConnections="true"
+		sizeCheckWaitTime="${interface.sftp.wait-check-time}" keepFileOnError="true" doc:name="SFTP" duplicateHandling="overwrite" useTempFileTimestampSuffix="true" tempDirInbound="${interface.sftp.sourcetempdir}" tempDirOutbound="${interface.sftp.targettempdir}" pollingFrequency="${interface.sftp.polling-frequency}">
+		<reconnect count="${interface.sftp.reconnection-attempts}" frequency="${interface.sftp.reconnection-frequency}"/>
+	</sftp:connector>
+	<db:mysql-config name="MySQL_Configuration" host="${interface.db.host}"
+		port="${interface.db.port}" user="${interface.db.user}" password="${interface.db.password}" database="${interface.db.dbname}"
+		doc:name="MySQL Configuration" />
+</mule>

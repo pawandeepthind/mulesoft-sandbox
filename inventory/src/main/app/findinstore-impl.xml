@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw"
+	xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:apikit="http://www.mulesoft.org/schema/mule/apikit" xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns:spring="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/apikit http://www.mulesoft.org/schema/mule/apikit/current/mule-apikit.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd">
+	<http:request-config name="HTTP_Request_Configuration"
+		host="${interface.geocode.host}" port="${interface.geocode.port}" doc:name="HTTP Request Configuration" protocol="HTTPS"/>
+    <sub-flow name="extractPostalCodeInputForEnricher">
+        <dw:transform-message doc:name="Extract PostalCode,State for Geocoding Enricher">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+---
+payload]]></dw:set-payload>
+            <dw:set-variable variableName="postalcode"><![CDATA[%dw 1.0
+%output application/java
+---
+payload.postal_code ++ "," ++ payload.country ]]></dw:set-variable>
+            <dw:set-variable variableName="itemids"><![CDATA[%dw 1.0
+%output application/java
+---
+payload.itemids joinBy ","]]></dw:set-variable>
+        </dw:transform-message>
+    </sub-flow>
+    <sub-flow name="fetchLatLngUsingGoogleGeocodeServiceSubFlow">
+        <http:request config-ref="HTTP_Request_Configuration" path="${interface.geocode.path}" method="GET" doc:name="Call Google GeoCode Service To Fetch Lat,Lng For input PostalCode,State" metadata:id="cd52a2ec-0c4a-46e4-bac6-778b7fe850cc">
+            <http:request-builder>
+                <http:query-param paramName="address" value="#[flowVars.postalcode]"/>
+                <http:query-param paramName="key" value="${interface.geocode.key}"/>
+            </http:request-builder>
+        </http:request>
+        <dw:transform-message doc:name="Transform Response to Geocode ResponseObject" metadata:id="d2b4aa76-7ece-461b-b4a7-0e7c2fd6a712">
+            <dw:input-payload doc:sample="geocode_resp.json" mimeType="application/json"/>
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/java
+---
+{
+	location: {
+		lat: payload.results[0].geometry.location.lat when payload.results[0] != null otherwise 0,
+		lng: payload.results[0].geometry.location.lng when payload.results[0] != null otherwise 0
+	},
+	status: payload.status
+} as :object {
+	class : "com.inventory.model.GeocodeResponse"
+}]]></dw:set-payload>
+        </dw:transform-message>
+    </sub-flow>
+	<flow name="post:/findinstore:application/json:findinstore-api-config">
+        <logger message="#[server.dateTime.format('yyyyMMddHHmmssSSSSSS')] : #[message.id] : Flow FindInStore Started #[message.id]" level="INFO" doc:name="Log: Flow Started"/>
+        <flow-ref name="extractPostalCodeInputForEnricher" doc:name="Call: extractPostalCodeInputForEnricher"/>
+		<enricher doc:name="Enrich: Geocode Zipcode, Country" source="#[payload]" target="#[flowVars.geocodeRespose]">
+            <flow-ref name="fetchLatLngUsingGoogleGeocodeServiceSubFlow" doc:name="Call: fetchLatLngUsingGoogleGeocodeService SubFlow"/>
+		</enricher>
+        <choice doc:name="Is status Ok">
+            <when expression="#[flowVars.geocodeRespose.status == &quot;OK&quot;]">
+                <logger message="#[server.dateTime.format('yyyyMMddHHmmssSSSSSS')] : #[message.id] : Geocoded (Lat: #[flowVars.geocodeRespose.location.lat], Lng: #[flowVars.geocodeRespose.location.lng])" level="DEBUG" doc:name="Log: Debug geocodedResponse"/>
+                <db:select config-ref="MySQL_Configuration" target="#[flowVars.closestStoreList]" doc:name="Fetch 5 Closest Store to Requested Zipcode">
+                    <db:parameterized-query><![CDATA[SELECT
+    *, (
+      3959 * acos (
+      cos ( radians(#[flowVars.geocodeRespose.location.lat]) )
+      * cos( radians( lat ) )
+      * cos( radians( lng ) - radians(#[flowVars.geocodeRespose.location.lng]) )
+      + sin ( radians(#[flowVars.geocodeRespose.location.lat]) )
+      * sin( radians( lat ) )
+    )
+) AS distance
+FROM store
+ORDER BY distance
+LIMIT 0 , 5]]></db:parameterized-query>
+                </db:select>
+                <custom-transformer class="com.inventory.utils.CreateQuery" doc:name="Prepate Query To Fetch Inventory For Nearby Stores" />
+                <logger message="#[server.dateTime.format('yyyyMMddHHmmssSSSSSS')] : #[message.id] : Query #[flowVars.query]" level="DEBUG" doc:name="Log: Debug FinalQuery"/>
+                <db:select config-ref="MySQL_Configuration" target="#[payload]" doc:name="Database: Fetch Inventory for nearby stores">
+                    <db:dynamic-query><![CDATA[#[flowVars.query]]]></db:dynamic-query>
+                </db:select>
+                <json:object-to-json-transformer doc:name="Convert payload to json"/>
+            </when>
+            <otherwise>
+                <logger message="#[server.dateTime.format('yyyyMMddHHmmssSSSSSS')] : #[message.id] : Response for geocode service not ok it is #[flowVars.geocodeRespose.status]" level="ERROR" doc:name="Log: Debug geocodedResponse"/>
+                <custom-transformer class="com.inventory.utils.RaiseException" doc:name="RaiseExceptions As Geocode Service Didnt Respond With Ok" />
+            </otherwise>
+        </choice>
+        <logger level="INFO" doc:name="Log: Flow Ended" message="#[server.dateTime.format('yyyyMMddHHmmssSSSSSS')] : #[message.id] : Flow FindInStore Ended"/>
+	</flow>
+</mule>

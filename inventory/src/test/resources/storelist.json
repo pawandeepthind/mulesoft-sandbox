@@ -1,0 +1,623 @@
+{
+    "records": [
+        {
+            "address_1": "521 Madison Avenue",
+            "city": "New York",
+            "country": "US",
+            "lat": "40.75991165",
+            "lng": "-73.97370082",
+            "location_name": "EILEEN FISHER - MADISON 1",
+            "post_code": "10022"
+        },
+        {
+            "address_1": "341 Columbus Avenue",
+            "city": "New York",
+            "country": "US",
+            "lat": "40.7801122",
+            "lng": "-73.9765759",
+            "location_name": "EILEEN FISHER - COLUMBUS AVE",
+            "post_code": "10024"
+        },
+        {
+            "address_1": "166 Fifth Avenue",
+            "city": "New York",
+            "country": "US",
+            "lat": "40.74069671",
+            "lng": "-73.99055016",
+            "location_name": "EILEEN FISHER - FIFTH AVE",
+            "post_code": "10010"
+        },
+        {
+            "address_1": "1039 Madison Avenue",
+            "city": "New York",
+            "country": "US",
+            "lat": "40.7765213",
+            "lng": "-73.9616816",
+            "location_name": "EILEEN FISHER - MADISON 2",
+            "post_code": "10075"
+        },
+        {
+            "address_1": "2055 Periwinkle Way",
+            "city": "Sanibel",
+            "country": "US",
+            "lat": "26.43796",
+            "lng": "-82.07066",
+            "location_name": "EILEEN FISHER - SANIBEL",
+            "post_code": "33957"
+        },
+        {
+            "address_1": "199 Boylston Street",
+            "city": "Chestnut Hill",
+            "country": "US",
+            "lat": "42.3206",
+            "lng": "-71.1747",
+            "location_name": "EILEEN FISHER - CHESTNUT HILL",
+            "post_code": "02467"
+        },
+        {
+            "address_1": "26 Newtown Lane",
+            "city": "East Hampton",
+            "country": "US",
+            "lat": "40.9643521",
+            "lng": "-72.1859936",
+            "location_name": "EILEEN FISHER - EAST HAMPTON",
+            "post_code": "11937"
+        },
+        {
+            "address_1": "100 Huntington Avenue",
+            "city": "Boston",
+            "country": "US",
+            "lat": "42.347029",
+            "lng": "-71.077897",
+            "location_name": "EILEEN FISHER - COPLEY PLACE",
+            "post_code": "02116"
+        },
+        {
+            "address_1": "125 Westchester Avenue",
+            "city": "White Plains",
+            "country": "US",
+            "lat": "41.0311023",
+            "lng": "-73.7599515",
+            "location_name": "EILEEN FISHER - WHITE PLAINS",
+            "post_code": "10601"
+        },
+        {
+            "address_1": "160 Main Street",
+            "city": "Westport",
+            "country": "US",
+            "lat": "41.1437533",
+            "lng": "-73.3615028",
+            "location_name": "EILEEN FISHER - WESTPORT",
+            "post_code": "06880"
+        },
+        {
+            "address_1": "395 West Broadway",
+            "city": "New York",
+            "country": "US",
+            "lat": "40.7241108",
+            "lng": "-74.0019115",
+            "location_name": "EILEEN FISHER - SOHO",
+            "post_code": "10012"
+        },
+        {
+            "address_1": "525 Pine Street",
+            "city": "Seattle",
+            "country": "US",
+            "lat": "47.6118192",
+            "lng": "-122.3355413",
+            "location_name": "EILEEN FISHER - PINE STREET",
+            "post_code": "98101"
+        },
+        {
+            "address_1": "24 Pleasant Street",
+            "city": "Northampton",
+            "country": "US",
+            "lat": "42.319316",
+            "lng": "-72.628978",
+            "location_name": "EILEEN FISHER - NORTHAMPTON",
+            "post_code": "01060"
+        },
+        {
+            "address_1": "845 North Michigan Avenue",
+            "city": "Chicago",
+            "country": "US",
+            "lat": "41.8980056",
+            "lng": "-87.6232355",
+            "location_name": "EILEEN FISHER - WATER TOWER PL",
+            "post_code": "60611"
+        },
+        {
+            "address_1": "1805G International Drive",
+            "city": "Mclean",
+            "country": "US",
+            "lat": "38.924693",
+            "lng": "-77.224511",
+            "location_name": "EILEEN FISHER-TYSON'S GALLERIA",
+            "post_code": "22102"
+        },
+        {
+            "address_1": "7101 Democracy Boulevard",
+            "city": "Bethesda",
+            "country": "US",
+            "lat": "39.0257717",
+            "lng": "-77.1475762",
+            "location_name": "EILEEN FISHER - BETHESDA- MONTGOMERY",
+            "post_code": "20817"
+        },
+        {
+            "address_1": "114 Stanford Shopping Center",
+            "city": "Palo Alto",
+            "country": "US",
+            "lat": "37.4435837",
+            "lng": "-122.1715279",
+            "location_name": "EILEEN FISHER - STANFORD",
+            "post_code": "94304"
+        },
+        {
+            "address_1": "1282 Broadway Plaza",
+            "city": "Walnut Creek",
+            "country": "US",
+            "lat": "37.8942222",
+            "lng": "-122.0582992",
+            "location_name": "EILEEN FISHER - WALNUT CREEK",
+            "post_code": "94596"
+        },
+        {
+            "address_1": "2801 West Big Beaver Road C-113",
+            "city": "Troy",
+            "country": "US",
+            "lat": "42.5595008",
+            "lng": "-83.1833009",
+            "location_name": "EILEEN FISHER - SOMERSET",
+            "post_code": "48084"
+        },
+        {
+            "address_1": "10 Columbus Circle",
+            "city": "New York",
+            "country": "US",
+            "lat": "40.7684251",
+            "lng": "-73.9831903",
+            "location_name": "EILEEN FISHER- COLUMBUS CENTER",
+            "post_code": "10019"
+        },
+        {
+            "address_1": "3333 Bristol Street, Suite 2007",
+            "city": "Costa Mesa",
+            "country": "US",
+            "lat": "33.6908608",
+            "lng": "-117.887914",
+            "location_name": "EILEEN FISHER-SOUTH COAST PLAZA",
+            "post_code": "92626"
+        },
+        {
+            "address_1": "1211 Third Street South",
+            "city": "Naples",
+            "country": "US",
+            "lat": "26.1312078",
+            "lng": "-81.8016074",
+            "location_name": "EILEEN FISHER - NAPLES",
+            "post_code": "34102"
+        },
+        {
+            "address_1": "15215 North Kierland Boulevard",
+            "city": "Scottsdale",
+            "country": "US",
+            "lat": "33.6251325",
+            "lng": "-111.9282394",
+            "location_name": "EILEEN FISHER - KIERLAND COMMONS",
+            "post_code": "85254"
+        },
+        {
+            "address_1": "48 Saint Georges Road",
+            "city": "Ardmore",
+            "country": "US",
+            "lat": "40.009032",
+            "lng": "-75.289669",
+            "location_name": "EILEEN FISHER - ARDMORE",
+            "post_code": "19003"
+        },
+        {
+            "address_1": "9 Elm Street",
+            "city": "Westfield",
+            "country": "US",
+            "lat": "40.6504328",
+            "lng": "-74.3481583",
+            "location_name": "EILEEN FISHER - WESTFIELD",
+            "post_code": "07090"
+        },
+        {
+            "address_1": "2216 Fillmore Street",
+            "city": "San Francisco",
+            "country": "US",
+            "lat": "37.7901996",
+            "lng": "-122.4339064",
+            "location_name": "EILEEN FISHER - FILLMORE",
+            "post_code": "94115"
+        },
+        {
+            "address_1": "53 Central Street",
+            "city": "Wellesley",
+            "country": "US",
+            "lat": "42.2963931",
+            "lng": "-71.2959214",
+            "location_name": "EILEEN FISHER - WELLESLEY",
+            "post_code": "02482"
+        },
+        {
+            "address_1": "160 North Gulph Road",
+            "city": "King Of Prussia",
+            "country": "US",
+            "lat": "40.0860622",
+            "lng": "-75.395345",
+            "location_name": "EILEEN FISHER - KING OF PRUSSIA",
+            "post_code": "19406"
+        },
+        {
+            "address_1": "4610  26th Avenue NE",
+            "city": "Seattle",
+            "country": "US",
+            "lat": "47.56182",
+            "lng": "-122.36539",
+            "location_name": "EILEEN FISHER-UNIVERSITY VILLAGE",
+            "post_code": "98105"
+        },
+        {
+            "address_1": "7353 SW Bridgeport Road",
+            "city": "Tigard",
+            "country": "US",
+            "lat": "45.395202",
+            "lng": "-122.751577",
+            "location_name": "EILEEN FISHER-BRIDGEPORT VILLAGE",
+            "post_code": "97224"
+        },
+        {
+            "address_1": "94 Derby Street",
+            "city": "Hingham",
+            "country": "US",
+            "lat": "42.1774601",
+            "lng": "-70.9087745",
+            "location_name": "EILEEN FISHER-HINGHAM",
+            "post_code": "02043"
+        },
+        {
+            "address_1": "3101 PGA Boulevard",
+            "city": "Palm Beach  Gardens",
+            "country": "US",
+            "lat": "26.8473981",
+            "lng": "-80.0853836",
+            "location_name": "EILEEN FISHER - Palm Beach Gardens",
+            "post_code": "33410"
+        },
+        {
+            "address_1": "2008 Bellevue Square SE",
+            "city": "Bellevue",
+            "country": "US",
+            "lat": "47.616263",
+            "lng": "-122.205060",
+            "location_name": "EILEEN FISHER-BELLEVUE SQUARE",
+            "post_code": "98004"
+        },
+        {
+            "address_1": "112 North Park Avenue",
+            "city": "Winter Park",
+            "country": "US",
+            "lat": "28.5980289",
+            "lng": "-81.3508217",
+            "location_name": "EILEEN FISHER - WINTER PARK",
+            "post_code": "32789"
+        },
+        {
+            "address_1": "149 Throckmorton Avenue",
+            "city": "Mill Valley",
+            "country": "US",
+            "lat": "37.90554",
+            "lng": "-122.548853",
+            "location_name": "EILEEN FISHER- MILL VALLEY",
+            "post_code": "94941"
+        },
+        {
+            "address_1": "640 Central Avenue",
+            "city": "Highland Park",
+            "country": "US",
+            "lat": "42.1847632",
+            "lng": "-87.8009621",
+            "location_name": "EILEEN FISHER - HIGHLAND PARK",
+            "post_code": "60035"
+        },
+        {
+            "address_1": "1501 Main Street",
+            "city": "Sarasota",
+            "country": "US",
+            "lat": "27.3366934",
+            "lng": "-82.5405399",
+            "location_name": "EILEEN FISHER - SARASOTA",
+            "post_code": "34236"
+        },
+        {
+            "address_1": "2800 East 2nd Avenue",
+            "city": "Denver",
+            "country": "US",
+            "lat": "39.7191536",
+            "lng": "-104.9540204",
+            "location_name": "EILEEN FISHER - DENVER",
+            "post_code": "80206"
+        },
+        {
+            "address_1": "5330 Western Avenue",
+            "city": "Chevy Chase",
+            "country": "US",
+            "lat": "38.9609231",
+            "lng": "-77.0864455",
+            "location_name": "EILEEN FISHER - CHEVY CHASE",
+            "post_code": "20815"
+        },
+        {
+            "address_1": "84 Frontenac Pl Dr.",
+            "city": "St. Louis",
+            "country": "US",
+            "lat": "38.62934",
+            "lng": "-90.41246",
+            "location_name": "EILEEN FISHER - SAINT LOUIS",
+            "post_code": "63131"
+        },
+        {
+            "address_1": "73-585 El Paseo Boulevard",
+            "city": "Palm Desert",
+            "country": "US",
+            "lat": "33.719539",
+            "lng": "-116.381205",
+            "location_name": "EILEEN FISHER- PALM DESERT",
+            "post_code": "92260"
+        },
+        {
+            "address_1": "142 Lincoln Avenue",
+            "city": "Santa Fe",
+            "country": "US",
+            "lat": "35.6893456",
+            "lng": "-105.9385168",
+            "location_name": "EILEEN FISHER - SANTA FE",
+            "post_code": "87501"
+        },
+        {
+            "address_1": "15 E. Colorado Boulevard",
+            "city": "Pasadena",
+            "country": "US",
+            "lat": "34.1460084",
+            "lng": "-118.1500351",
+            "location_name": "EILEEN FISHER - PASADENA",
+            "post_code": "91105"
+        },
+        {
+            "address_1": "3480 Galleria",
+            "city": "Edina",
+            "country": "US",
+            "lat": "44.876876",
+            "lng": "-93.3258577",
+            "location_name": "EILEEN FISHER - EDINA",
+            "post_code": "55435"
+        },
+        {
+            "address_1": "8687 N. Central Expressway",
+            "city": "Dallas",
+            "country": "US",
+            "lat": "32.8685017",
+            "lng": "-96.7735125",
+            "location_name": "EILEEN FISHER - NORTHPARK",
+            "post_code": "75225"
+        },
+        {
+            "address_1": "2126 Abbott Martin Road",
+            "city": "Nashville",
+            "country": "US",
+            "lat": "36.107504",
+            "lng": "-86.814796",
+            "location_name": "EILEEN FISHER - NASHVILLE",
+            "post_code": "37215"
+        },
+        {
+            "address_1": "6822-G Phillips Place Court",
+            "city": "Charlotte",
+            "country": "US",
+            "lat": "35.145880",
+            "lng": "-80.826132",
+            "location_name": "EILEEN FISHER - CHARLOTTE",
+            "post_code": "28210"
+        },
+        {
+            "address_1": "419 Nichols Road",
+            "city": "Kansas City",
+            "country": "US",
+            "lat": "39.0412644",
+            "lng": "-94.5924621",
+            "location_name": "EILEEN FISHER - KANSAS CITY",
+            "post_code": "64112"
+        },
+        {
+            "address_1": "252 Greenwich Avenue",
+            "city": "Greenwich",
+            "country": "US",
+            "lat": "41.0263949",
+            "lng": "-73.6263433",
+            "location_name": "EILEEN FISHER - GREENWICH",
+            "post_code": "06830"
+        },
+        {
+            "address_1": "113 S. Robertson Boulevard",
+            "city": "Los Angeles",
+            "country": "US",
+            "lat": "34.0748245",
+            "lng": "-118.3840667",
+            "location_name": "EILEEN FISHER - ROBERTSON",
+            "post_code": "90048"
+        },
+        {
+            "address_1": "1 Bridge Street",
+            "city": "Irvington",
+            "country": "US",
+            "lat": "41.0397668",
+            "lng": "-73.8734771",
+            "location_name": "EILEEN FISHER - LAB",
+            "post_code": "10533"
+        },
+        {
+            "address_1": "314 East 9Th Street",
+            "city": "New York",
+            "country": "US",
+            "lat": "40.7287081",
+            "lng": "-73.9866087",
+            "location_name": "EILEEN FISHER - BROOKLYN",
+            "post_code": "10003"
+        },
+        {
+            "address_1": "25 The West Mall",
+            "city": "Toronto",
+            "country": "CA",
+            "lat": "43.6112889",
+            "lng": "-79.5568671",
+            "location_name": "EILEEN FISHER - TORONTO - SHERWAY GARDENS",
+            "post_code": "M9C 1B8"
+        },
+        {
+            "address_1": "4 Slingsby Pl",
+            "city": "London",
+            "country": "GB",
+            "lat": "51.512432",
+            "lng": "-0.126466",
+            "location_name": "EILEEN FISHER - Covent Garden",
+            "post_code": "WC2E 9AB"
+        },
+        {
+            "address_1": "23 High Street",
+            "city": "London",
+            "country": "GB",
+            "lat": "51.4251246702787",
+            "lng": "-0.2171974306526",
+            "location_name": "EILEEN FISHER - Wimbledon Village",
+            "post_code": "SW19 5DX"
+        },
+        {
+            "address_1": "80 Kings Road",
+            "city": "London",
+            "country": "GB",
+            "lat": "51.490909",
+            "lng": "-0.161127",
+            "location_name": "EILEEN FISHER- Chelsea",
+            "post_code": "SW3 4TZ"
+        },
+        {
+            "address_1": "96 Marylebone High Street",
+            "city": "London",
+            "country": "GB",
+            "lat": "51.519541",
+            "lng": "-0.151994",
+            "location_name": "EILEEN FISHER - Marylebone Street",
+            "post_code": "W1U 4RH"
+        },
+        {
+            "address_1": "2721 Granville St",
+            "city": "Vancouver",
+            "country": "CA",
+            "lat": "49.2613828",
+            "lng": "-123.1390172",
+            "location_name": "EILEEN FISHER - Vancouver Granville Street",
+            "post_code": "V6H 3J1"
+        },
+        {
+            "address_1": "6455 Macleod Trail SW",
+            "city": "Calgary",
+            "country": "CA",
+            "lat": "50.9983808",
+            "lng": "-114.0734363",
+            "location_name": "EILEEN FISHER - Calgary Chinook Centre",
+            "post_code": "T2H 0K9"
+        },
+        {
+            "address_1": "1200 Morris Turnpike",
+            "city": "Short Hills",
+            "country": "US",
+            "lat": "40.739873",
+            "lng": "-74.3634868",
+            "location_name": "EILEEN FISHER - SHORT HILLS",
+            "post_code": "07078"
+        },
+        {
+            "address_1": "7525 166th Ave NE",
+            "city": "Redmond",
+            "country": "US",
+            "lat": "47.6710318",
+            "lng": "-122.1191268",
+            "location_name": "EILEEN FISHER - REDMOND T. C.",
+            "post_code": "98052"
+        },
+        {
+            "address_1": "100 Oakbrook Ctr",
+            "city": "Oakbrook",
+            "country": "US",
+            "lat": "41.8502771",
+            "lng": "-87.9533023",
+            "location_name": "EILEEN FISHER - OAKBROOK",
+            "post_code": "60523"
+        },
+        {
+            "address_1": "1 Riverside Square Mall",
+            "city": "HACKENSACK",
+            "country": "US",
+            "lat": "40.90632",
+            "lng": "-74.03054",
+            "location_name": "EILEEN FISHER #10",
+            "post_code": "07601"
+        },
+        {
+            "address_1": "5 Woodfield Mall",
+            "city": "Schaumburg",
+            "country": "US",
+            "lat": "42.0464358",
+            "lng": "-88.0369224",
+            "location_name": "EILEEN FISHER #12",
+            "post_code": "60173"
+        },
+        {
+            "address_1": "10250 Santa Monica Blvd.",
+            "city": "Los Angeles",
+            "country": "US",
+            "lat": "34.0590031",
+            "lng": "-118.418866",
+            "location_name": "EILEEN FISHER — CENTURY CITY",
+            "post_code": "90067"
+        },
+        {
+            "address_1": "28807 Chagrin Blvd",
+            "city": "Woodmere",
+            "country": "US",
+            "lat": "41.4632992",
+            "lng": "-81.4766241",
+            "location_name": "EILEEN FISHER - CLEVELAND",
+            "post_code": "44122"
+        },
+        {
+            "address_1": "314 East 9th Street",
+            "city": "New York",
+            "country": "US",
+            "lat": "40.728687",
+            "lng": "-73.986616",
+            "location_name": "EILEEN FISHER BOUTIQUE",
+            "post_code": "10003"
+        }
+    ],
+    "metadata": {
+        "page": {
+            "current": 1,
+            "last": 1
+        },
+        "index": {
+            "from": 1,
+            "to": 67,
+            "of": 67
+        },
+        "version": "3",
+        "quota": {
+            "remaining": 98,
+            "limit": 100
+        }
+    }
+}

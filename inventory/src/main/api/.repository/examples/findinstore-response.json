@@ -1,0 +1,26 @@
+{
+    "itemids": [
+        {
+            "itemid": "10000001",
+            "stores": [
+                {
+                    "qty": 2,
+                    "storeid": "1"
+                },
+                {
+                    "qty": 10,
+                    "storeid": "2"
+                }
+            ]
+        },
+        {
+            "itemid": "10000002",
+            "stores": [
+                {
+                    "qty": 2,
+                    "storeid": "3"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+[
+    {
+        "address": "521 Madison Avenue",
+        "qty": 101,
+        "itemid": 10001,
+        "name": "STORE - MADISON 1",
+        "zipcode": "10022",
+        "city": "New York",
+        "id": 1
+    },
+    {
+        "address": "521 Madison Avenue",
+        "qty": 102,
+        "itemid": 10002,
+        "name": "STORE - MADISON 1",
+        "zipcode": "10022",
+        "city": "New York",
+        "id": 1
+    },
+    {
+        "address": "166 Fifth Avenue",
+        "qty": 101,
+        "itemid": 10001,
+        "name": "STORE - FIFTH AVE",
+        "zipcode": "10010",
+        "city": "New York",
+        "id": 3
+    },
+    {
+        "address": "166 Fifth Avenue",
+        "qty": 102,
+        "itemid": 10002,
+        "name": "STORE - FIFTH AVE",
+        "zipcode": "10010",
+        "city": "New York",
+        "id": 3
+    }
+]

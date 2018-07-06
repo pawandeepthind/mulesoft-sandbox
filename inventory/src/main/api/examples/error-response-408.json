@@ -1,0 +1,7 @@
+{    
+	 "code": "",     
+	 "severity": "ERROR",     
+	 "message": "REQUEST_TIMEOUT",     
+	 "internalMessage": "Exception Details",     
+	 "status": "408" 
+}

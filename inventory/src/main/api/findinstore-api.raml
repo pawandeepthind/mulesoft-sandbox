@@ -1,0 +1,59 @@
+#%RAML 1.0
+baseUri: https://mocksvc.mulesoft.com/mocks/89138b95-5ff3-4baa-af4d-932f7d1b8f30 # 
+version: 1.0
+title: findinstore-api
+
+uses:
+  apiTypeLib: findinstore-library.raml
+
+/findinstore:              
+  post:
+    body:
+      application/json:
+        type: apiTypeLib.findinstore-json-request
+        example: !include examples/findinstore-request.json
+        
+    responses:
+      200:        
+        description: |
+           Successfull Response.
+        body:         
+          application/json:                                    
+            example: !include examples/findinstore-response.json
+      
+      400:
+        description: Bad Request. The request could not be understood by the server due to malformed syntax.
+        body:
+          application/json:
+            example: !include examples/error-response-400.json
+      401:
+        description: Unauthorized. The request requires user authentication.
+        body:
+          application/json:
+            example: !include examples/error-response-401.json          
+      403:
+        description: Forbidden. The server understood the request, but is refusing to fulfill it.
+        body:
+          application/json:
+            example: !include examples/error-response-403.json          
+      404:
+        description: Not Found. The server has not found anything matching the Request-URI.
+        body:
+          application/json:
+            example: !include examples/error-response-404.json          
+      405:
+        description: Method Not Allowed. The method specified in the Request-Line is not allowed for the resource specified in the URI.
+        body:
+          application/json:
+            example: !include examples/error-response-405.json          
+      408:
+        description: Request timeout
+        body:
+          application/json:
+            example: !include examples/error-response-408.json                 
+                
+      500:
+        description: The server encountered an unexpected condition which prevented it from fulfilling the request.
+        body:
+          application/json:
+            example: !include examples/error-response-500.json 

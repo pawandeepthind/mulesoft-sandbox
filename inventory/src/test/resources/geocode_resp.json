@@ -1,0 +1,88 @@
+{
+    "results": [
+        {
+            "address_components": [
+                {
+                    "long_name": "01810",
+                    "short_name": "01810",
+                    "types": [
+                        "postal_code"
+                    ]
+                },
+                {
+                    "long_name": "Andover",
+                    "short_name": "Andover",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Andover",
+                    "short_name": "Andover",
+                    "types": [
+                        "administrative_area_level_3",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Essex County",
+                    "short_name": "Essex County",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Massachusetts",
+                    "short_name": "MA",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "United States",
+                    "short_name": "US",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Andover, MA 01810, USA",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 42.701208,
+                        "lng": -71.076133
+                    },
+                    "southwest": {
+                        "lat": 42.59795889999999,
+                        "lng": -71.25610309999999
+                    }
+                },
+                "location": {
+                    "lat": 42.6568574,
+                    "lng": -71.1407888
+                },
+                "location_type": "APPROXIMATE",
+                "viewport": {
+                    "northeast": {
+                        "lat": 42.701208,
+                        "lng": -71.076133
+                    },
+                    "southwest": {
+                        "lat": 42.59795889999999,
+                        "lng": -71.25610309999999
+                    }
+                }
+            },
+            "place_id": "ChIJWy2nPkYI44kRBSaigqRCFto",
+            "types": [
+                "postal_code"
+            ]
+        }
+    ],
+    "status": "OK"
+}

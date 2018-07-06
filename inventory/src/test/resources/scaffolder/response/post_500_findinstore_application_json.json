@@ -1,0 +1,7 @@
+{    
+	 "code": "",     
+	 "severity": "ERROR",     
+	 "message": "INTERNAL_SERVER_ERROR",     
+	 "internalMessage": "Exception Details",     
+	 "status": "500" 
+}
