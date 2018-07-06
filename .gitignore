@@ -1,3 +1,7 @@
+**/reports
+**/reports/*
+**/catalog
+**/catalog/*
 **/.project
 **/.settings
 **/.project/*
