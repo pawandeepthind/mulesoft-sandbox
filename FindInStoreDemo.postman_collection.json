@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "fb8ae4b5-7c00-4cf5-912e-d6e22aaf7b21",
+		"name": "FindInStoreDemo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8081/api/findinstore",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"country\": \"US\",\n  \"postal_code\": \"Boston\",\n  \"itemids\": [\n    \"10001\",\n    \"10002\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/findinstore",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"findinstore"
+					]
+				},
+				"description": "Postman collection to call find in store api, to find the inventory for the items in the closest store."
+			},
+			"response": []
+		}
+	]
+}

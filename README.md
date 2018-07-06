@@ -1,5 +1,4 @@
 # README
----
 
 # What
 Dev machine setup for Mulesoft API presentation. This machine will host the mysql database and SFTP server.
@@ -25,7 +24,7 @@ Dev machine setup for Mulesoft API presentation. This machine will host the mysq
 ## 3. Change directory to mulesoft-sandbox/sandbox
 
   ```
-  $ git clone mulesoft-sandbox/sandbox
+  $ cd mulesoft-sandbox/sandbox
   ```
 
 ## 4. Execute vagrant up command (Note: This command may take some time for the first time, 10-15 mins)
@@ -34,12 +33,33 @@ Dev machine setup for Mulesoft API presentation. This machine will host the mysq
   $ vagrant up
   ```
 
-##4. Import inventory project to anypoint studio using mulesoft-sandbox/inventory/pom.xml
+## 5. Import inventory project to anypoint studio using mulesoft-sandbox/inventory/pom.xml
 
-## 5. Right click on the imported inventory project and run, validate in console that application is deployed successfully
+## 6. Right click on the imported inventory project and Validate in console that application is deployed successfully
 
-## 6. Call API using following specification
+    ```
+    Right click on inventory project > Run As > Mule Application with Maven,
+    ```
 
+## 7. Call API using following specification
+
+  ```
+  POST /api/findinstore HTTP/1.1
+  Host: localhost:8081
+  Content-Type: application/json
+  Cache-Control: no-cache
+
+  {
+    "country": "US",
+    "postal_code": "Boston",
+    "itemids": [
+      "10001",
+      "10002"
+    ]
+  }
+  ```
+
+  Find the Postman collection link [here](FindInStoreDemo.postman_collection.json) for details on how to call API
 
 ## Connectivity Information to the vagrant dev box (in case required)
 . **Links, Credentials and Ports** (Note: ip can be different depending on the ip used in config.yml)
@@ -55,6 +75,3 @@ Dev machine setup for Mulesoft API presentation. This machine will host the mysq
       username: vagrant
       password: vagrant
       path: /home/vagrant/sftp
-
-   
-
