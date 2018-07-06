@@ -1,7 +1,7 @@
 # README
 
 # What
-Dev machine setup for Mulesoft API presentation. This machine will host the mysql database and SFTP server.
+Dev machine setup for Mulesoft API Implementation. Find In Store API that allows finding inventory of items in nearby stores. 
 
 # Steps
 
@@ -36,14 +36,14 @@ Dev machine setup for Mulesoft API presentation. This machine will host the mysq
 5. Import inventory project to anypoint studio using mulesoft-sandbox/inventory/pom.xml
 
   ```
-    Click File > Import > Maven based Mule project from pom.xml > Select project pom.xml file and import
+  Click File > Import > Maven based Mule project from pom.xml > Select project pom.xml file and import
   ```
 
 6. Right click on the imported inventory project and Validate in console that application is deployed successfully
 
-    ```
-    Click on inventory project > Run As > Mule Application with Maven,
-    ```
+  ```
+  Click on inventory project > Run As > Mule Application with Maven,
+  ```
 
 7. Call API using following specification
 
