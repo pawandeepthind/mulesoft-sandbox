@@ -68,7 +68,7 @@ Dev machine setup for Mulesoft API Implementation. Find In Store API that allows
 ## Connectivity Information to the vagrant dev box (in case required)
 . **Links, Credentials and Ports** (Note: ip can be different depending on the ip used in config.yml)
    * MySql DB: 
-   
+
       | Property | Values      |
       | -------- | ----------- |
       | host     | 10.0.20.20  |
@@ -85,4 +85,4 @@ Dev machine setup for Mulesoft API Implementation. Find In Store API that allows
       | port     | 22                   |
       | user     | vagrant              |
       | password | vagrant              |
-      | dbname   | /home/vagrant/sftp   |
+      | home dir | /home/vagrant        |
