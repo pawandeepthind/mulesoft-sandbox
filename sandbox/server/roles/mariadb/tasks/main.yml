@@ -1,0 +1,24 @@
+---
+- name: Install maraidb-server
+  package: name={{item}} state=present
+  with_items:
+    - mariadb-server
+    
+- name: Start the service
+  become: yes
+  command: service mariadb start
+
+- name: Start the service
+  service: name=mariadb enabled=yes state=started
+
+- name: Create setup_sql.sql file
+  template: 
+    src=setup_sql.sql.j2 
+    dest=/home/vagrant/setup_sql.sql
+    mode=0755
+    group=vagrant
+    owner=vagrant
+
+- name: Do basic mysql setup Step 1
+  become: yes
+  shell: mysql -uroot < /home/vagrant/setup_sql.sql

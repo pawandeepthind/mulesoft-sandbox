@@ -1,0 +1,27 @@
+---
+groups:
+  - group_name: dev_group
+    servers:
+      - name: dev
+        type: slave
+        box: geerlingguy/centos7
+        memory: 6144
+        ip: 10.0.20.20
+        synced_folders: 
+          - { guest: "./server", host: "/home/vagrant/server" }
+        forwarded_ports:
+          - { guest: 8080, host: 8080 } # jenkins port
+          - { guest: 61616, host: 61616 } # activemq port
+          - { guest: 8161, host: 8161 } # activemq port
+          - { guest: 3306, host: 3306 } #mysql port
+  - group_name: mgmt_group 
+    servers:
+      - name: mgmt
+        type: master
+        box: geerlingguy/centos7
+        memory: 256
+        ip: 10.0.20.10
+        synced_folders: 
+          - { guest: "./server", host: "/home/vagrant/server" }
+        forwarded_ports:
+

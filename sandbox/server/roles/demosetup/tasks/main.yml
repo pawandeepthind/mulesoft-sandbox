@@ -1,0 +1,40 @@
+---
+- name: Create /home/vagrant/sftp/inbound/inventory/in Directory Structure
+  file:
+      path: /home/vagrant/sftp/inbound/inventory/in
+      state: directory
+      mode: 0755
+      group: vagrant
+      owner: vagrant
+
+- name: Create /home/vagrant/sftp/inbound/inventory/archive Directory Structure
+  file:
+      path: /home/vagrant/sftp/inbound/inventory/archive
+      state: directory
+      mode: 0755
+      group: vagrant
+      owner: vagrant
+
+- name: Create /home/vagrant/sftp/inbound/inventory/process Directory Structure
+  file:
+      path: /home/vagrant/sftp/inbound/inventory/process
+      state: directory
+      mode: 0755
+      group: vagrant
+      owner: vagrant
+
+- name: Create /home/vagrant/sftp/inbound/inventory/error Directory Structure
+  file:
+      path: /home/vagrant/sftp/inbound/inventory/error
+      state: directory
+      mode: 0755
+      group: vagrant
+      owner: vagrant
+
+- name: Create InventoryLoad_Full_Test.csv file
+  template: 
+    src=InventoryLoad_Full_Test.csv.j2 
+    dest=/home/vagrant/sftp/inbound/inventory/in/InventoryLoad_Full_Test.csv
+    mode=0755
+    group=vagrant
+    owner=vagrant

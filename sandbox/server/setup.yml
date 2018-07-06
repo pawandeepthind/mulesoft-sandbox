@@ -1,0 +1,10 @@
+---  
+- hosts: dev_group
+  strategy: free
+  become: yes
+  gather_facts: yes
+  
+  roles:
+    - common
+    - mariadb
+    - demosetup
