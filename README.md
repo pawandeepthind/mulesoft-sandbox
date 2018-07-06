@@ -68,7 +68,7 @@ Dev machine setup for Mulesoft API Implementation. Find In Store API that allows
 ## Connectivity Information to the vagrant dev box (in case required)
 . **Links, Credentials and Ports** (Note: ip can be different depending on the ip used in config.yml)
    * MySql DB: 
-      |*Property*| *Values*    |
+      | Property | Values      |
       |:-------- |:----------- |
       | host     | 10.0.20.20  |
       | port     | 3306        |
@@ -77,7 +77,7 @@ Dev machine setup for Mulesoft API Implementation. Find In Store API that allows
       | dbname   | inventory   |
 
    * SFTP:
-      |*Property*| *Values*             |
+      | Property |  Values              |
       |:-------- |:-------------------- |
       | host     | 10.0.20.20           |
       | port     | 22                   |
