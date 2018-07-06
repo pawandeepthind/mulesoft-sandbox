@@ -11,8 +11,8 @@ Dev machine setup for Mulesoft API Implementation. Find In Store API that allows
   * Install plugins (vbguest and hostmanager)
     
   ```
-  $ vagrant plugin install vagrant-vbguest
   $ vagrant plugin install vagrant-hostmanager
+  $ vagrant plugin install vagrant-vbguest
   ```
 
 2. Checkout the code
