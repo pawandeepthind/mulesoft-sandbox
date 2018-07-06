@@ -6,8 +6,8 @@ Dev machine setup for Mulesoft API Implementation. Find In Store API that allows
 # Steps
 
 1. Here are some of the pre-requisite (Note: It is tested on Mac OS X for now)
-  * Install latest vagrant
-  * Install latest virtual Box
+  * Install latest virtual Box (5.2.12-122591 - VirtualBox-5.2.12-122591-OSX.dmg)
+  * Install Vagrant (2.1.2 - vagrant_2.1.2_x86_64.dmg)
   * Install plugins (vbguest and hostmanager)
     
   ```
