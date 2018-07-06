@@ -1,3 +1,6 @@
+**/.project
+**/.settings
+**/.project/*
 **/bin/*
 .DS_Store
 .metadata/*
