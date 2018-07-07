@@ -64,7 +64,7 @@ Description: Allows finding inventory of items in nearby stores. This applicatio
   Cache-Control: no-cache
 
   {
-    "address", "49 W 27th St New York NY 10001",
+    "address": "49 W 27th St New York NY 10001",
     "itemids": [
       "10001",
       "10002"
