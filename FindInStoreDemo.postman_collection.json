@@ -17,7 +17,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"country\": \"US\",\n  \"postal_code\": \"Boston\",\n  \"itemids\": [\n    \"10001\",\n    \"10002\"\n  ]\n}"
+					"raw": "{\n  \"address\": \"49 W 27th St New York NY 10001\",\n  \"itemids\": [\n    \"10001\",\n    \"10002\"\n  ]\n}"
 				},
 				"url": {
 					"raw": "http://localhost:8081/api/findinstore",

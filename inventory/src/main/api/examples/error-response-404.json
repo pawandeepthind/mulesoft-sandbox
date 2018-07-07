@@ -1,7 +1,4 @@
-{     
-  "code": "",
-  "severity": "ERROR",     
-  "message": "RESOURCE_NOT_FOUND",     
-  "internalMessage": "Exception Details",     
-  "status": "404" 
+{            
+	 "message": "RESOURCE_NOT_FOUND",     
+	 "internalMessage": "Exception Details",      
 }

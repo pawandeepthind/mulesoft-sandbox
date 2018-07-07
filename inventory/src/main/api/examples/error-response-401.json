@@ -1,2 +1,4 @@
-{
+{            
+	 "message": "BAD_REQUEST",     
+	 "internalMessage": "Exception Details",      
 }

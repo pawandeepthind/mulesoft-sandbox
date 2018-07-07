@@ -1,9 +1,15 @@
 # README
 
 # What
-Dev machine setup for Mulesoft API Implementation. Find In Store API that allows finding inventory of items in nearby stores. 
+Machine setup for API Implementation. 
+API: Find In Store API 
+Description: Allows finding inventory of items in nearby stores. This application contains two flows
+	1. API implementation - Uses free form address provided in the request, fetches nearest lat,lng using Google Geocode API. And then uses this lat,lng to lookup for nearby stores using database tables stored in mysql db. And then looksup for the inventory for the 5 nearby stores and the items ids provided in the request and present them back in json format.
+	2. Supporting Point-To-Point Integration: This integration 
+		1. Is used to load inventory in storeitemqty table.
+		2. Is used to load store in store table.
 
-# Steps
+# Steps to setup the application demo
 
 1. Here are some of the pre-requisite (Note: It is tested on Mac OS X for now)
   * Install latest virtual Box (5.2.12-122591 - VirtualBox-5.2.12-122591-OSX.dmg)

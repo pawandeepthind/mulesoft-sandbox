@@ -12,7 +12,7 @@ http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/cor
     </spring:beans>
     <munit:test name="findinstore-impl-test-suite-extractPostalCodeInputForEnricherTest" description="Test">
         <set-payload value="{   &quot;country&quot;: &quot;US&quot;,   &quot;postal_code&quot;: &quot;01810&quot;,   &quot;itemids&quot;: [     &quot;10001&quot;,     &quot;10002&quot;   ] }" mimeType="application/json" doc:name="Set Payload"/>
-        <flow-ref name="extractPostalCodeInputForEnricher" doc:name="Flow-ref to extractPostalCodeInputForEnricher"/>
+        <flow-ref name="extractAddressInputForEnricher" doc:name="Flow-ref to extractAddressInputForEnricher"/>
         <byte-array-to-string-transformer doc:name="Byte Array to String"/>
         <munit:assert-not-null message="Response is null" doc:name="Assert Not Null Payload"/>
         <munit:assert-on-equals message="Extracting Address Lookup Input Failed" expectedValue="01810,US" actualValue="#[flowVars.postalcode.replaceAll(&quot;\\s+&quot;,&quot;&quot;)]" doc:name="Assert Equals"/>

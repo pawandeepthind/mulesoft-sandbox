@@ -183,5 +183,6 @@ VALUES
             </db:insert>
     	</foreach>
     	<logger message="#[server.dateTime.format('yyyyMMddHHmmssSSSSSS')] : Flow inventoryLoadProcessFlow Ended" level="INFO" doc:name="Log: Flow End"/>
+        <exception-strategy ref="catchExceptionStrategySubFlow" doc:name="Reference Exception Strategy"/>
     </flow>
 </mule>

@@ -1,7 +1,4 @@
-{    
-	 "code": "",     
-	 "severity": "ERROR",     
+{            
 	 "message": "NO_PERMISSION_TO_ACCESS",     
-	 "internalMessage": "Exception Details",     
-	 "status": "403" 
+	 "internalMessage": "Exception Details",      
 }

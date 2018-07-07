@@ -1,7 +1,4 @@
-{    
-	 "code": "",     
-	 "severity": "ERROR",     
+{            
 	 "message": "BAD_REQUEST",     
-	 "internalMessage": "Exception Details",     
-	 "status": "400" 
+	 "internalMessage": "Exception Details",      
 }

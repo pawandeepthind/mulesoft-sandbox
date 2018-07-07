@@ -1,1 +1,4 @@
-{     "code": "",     "severity": "ERROR",     "message": "METHOD_NOT_ALLOWED",     "internalMessage": "Exception Details",     "status": "405" }
+{            
+	 "message": "METHOD_NOT_ALLOWED",     
+	 "internalMessage": "Exception Details",      
+}

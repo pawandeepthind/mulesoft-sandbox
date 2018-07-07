@@ -17,6 +17,9 @@ http://www.mulesoft.org/schema/mule/sftp http://www.mulesoft.org/schema/mule/sft
 		<logger level="ERROR" doc:name="Log: Raise Alert"
 			message="#[server.dateTime.format('yyyyMMddHHmmssSSSSSS')] :  Raise Alert and Do Error Handling" />
 	</sub-flow>
+    <catch-exception-strategy name="catchExceptionStrategySubFlow">
+        <logger message="#[server.dateTime.format('yyyyMMddHHmmssSSSSSS')] :  Raise Alert and Do Error Handling" level="ERROR" doc:name="Log: Raise Alert"/>
+    </catch-exception-strategy>
 
 
 	<choice-exception-strategy name="realTimeGlobalExceptionStrategy">

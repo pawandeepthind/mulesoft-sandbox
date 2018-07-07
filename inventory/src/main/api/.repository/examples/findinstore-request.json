@@ -1,6 +1,5 @@
 {
-    "country": "US",
-    "postal_code": "01810",
+    "address": "01810",
     "itemids":[
     	"100001",
     	"100002"
