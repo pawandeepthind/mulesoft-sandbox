@@ -1,21 +1,24 @@
 # README
 
-# What
+## What
+
 Machine setup for API Implementation. 
 API: Find In Store API 
 Description: Allows finding inventory of items in nearby stores. This application contains two flows
-  1. API implementation - Uses free form address provided in the request, fetches nearest lat,lng using Google Geocode API. And then uses this lat,lng to lookup for nearby stores using database tables stored in mysql db. And then looksup for the inventory for the 5 nearby stores and the items ids provided in the request and present them back in json format.
-  2. Supporting Point-To-Point Integration: This integration 
-      1. Is used to load inventory in storeitemqty table.
-      2. Is used to load store in store table.
 
-# Steps to setup the application
+  1. *API implementation:* Uses free form address provided in the request, fetches nearest lat,lng using Google Geocode API. And then uses this lat,lng to lookup for nearby stores using database tables stored in mysql db. And then looksup for the inventory for the 5 nearby stores and the items ids provided in the request and present them back in json format.
+
+  2. *Supporting Integration: *This integration
+      1. Is used to load inventory in storeitemqty table. This can be setup as full sync once a day.
+      2. Is used to load store in store table. (not required just using it for ease of setup)
+
+## Steps to setup the application
 
 1. Here are some of the pre-requisite (Note: It is tested on Mac OS X for now)
-  * Install latest virtual Box (5.2.12-122591 - VirtualBox-5.2.12-122591-OSX.dmg)
-  * Install Vagrant (2.1.2 - vagrant_2.1.2_x86_64.dmg)
-  * Install plugins (vbguest and hostmanager)
-    
+* Install latest virtual Box (5.2.12-122591 - VirtualBox-5.2.12-122591-OSX.dmg)
+* Install Vagrant (2.1.2 - vagrant_2.1.2_x86_64.dmg)
+* Install plugins (vbguest and hostmanager)
+
   ```
   $ vagrant plugin install vagrant-hostmanager
   $ vagrant plugin install vagrant-vbguest
@@ -26,6 +29,7 @@ Description: Allows finding inventory of items in nearby stores. This applicatio
   ```
   $ git clone https://github.com/pawandeepthind/mulesoft-sandbox.git
   ```
+  
     
 3. Change directory to mulesoft-sandbox/sandbox
 
@@ -71,9 +75,9 @@ Description: Allows finding inventory of items in nearby stores. This applicatio
 
   Find the Postman collection link [here](FindInStoreDemo.postman_collection.json) for details on how to call API
 
-## Connectivity Information for MySql and SFTP (in case required)
-. **Links, Credentials and Ports** (Note: ip can be different depending on the ip used in config.yml)
-   * MySql DB: 
+### Connectivity Information for MySql and SFTP (in case required)
+
+* MySql DB:
 
       | Property | Values      |
       | -------- | ----------- |
@@ -83,7 +87,7 @@ Description: Allows finding inventory of items in nearby stores. This applicatio
       | password | password    |
       | dbname   | inventory   |
 
-   * SFTP:
+* SFTP:
 
       | Property |  Values              |
       | -------- | -------------------- |
