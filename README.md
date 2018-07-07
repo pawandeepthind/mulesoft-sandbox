@@ -5,6 +5,7 @@
 Machine setup for API Implementation.
 
 *API:* Find In Store API
+
 *Description:* Allows finding inventory of items in nearby stores. This application contains two flows
 
   1. _API implementation:_ Uses free form address provided in the request, fetches nearest location(lat,lng) using Google Geocode API for the provided address. And then uses this location(lat,lng) to lookup nearby stores using database table stored in db. And then lookup inventory for the items in the request for these nearby stores (limited to 5) and respond back the result in json format.
