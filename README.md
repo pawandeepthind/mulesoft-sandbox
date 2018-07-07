@@ -97,9 +97,7 @@ Description: Allows finding inventory of items in nearby stores. This applicatio
       | password | vagrant              |
       | home dir | /home/vagrant        |
 
-Note:
-
-SQL statement used to find 5 nearby stores, this query is taken from the following discussion [link](https://gis.stackexchange.com/questions/31628/find-points-within-a-distance-using-mysql)
+### Note: SQL statement used to find 5 nearby stores, this query is taken from the following discussion [link](https://gis.stackexchange.com/questions/31628/find-points-within-a-distance-using-mysql)
 
 ```sql
 SELECT
