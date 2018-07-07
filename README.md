@@ -78,23 +78,23 @@ $ vagrant plugin install vagrant-vbguest
 
 * MySql DB:
 
-      | Property | Values      |
-      | -------- | ----------- |
-      | host     | 10.0.20.20  |
-      | port     | 3306        |
-      | user     | root        |
-      | password | password    |
-      | dbname   | inventory   |
+| Property | Values      |
+| -------- | ----------- |
+| host     | 10.0.20.20  |
+| port     | 3306        |
+| user     | root        |
+| password | password    |
+| dbname   | inventory   |
 
 * SFTP:
 
-      | Property |  Values              |
-      | -------- | -------------------- |
-      | host     | 10.0.20.20           |
-      | port     | 22                   |
-      | user     | vagrant              |
-      | password | vagrant              |
-      | home dir | /home/vagrant        |
+| Property |  Values              |
+| -------- | -------------------- |
+| host     | 10.0.20.20           |
+| port     | 22                   |
+| user     | vagrant              |
+| password | vagrant              |
+| home dir | /home/vagrant        |
 
 ### Note: SQL statement used to find 5 nearby stores, this query is taken from the following discussion [link](https://gis.stackexchange.com/questions/31628/find-points-within-a-distance-using-mysql)
 
