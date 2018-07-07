@@ -19,10 +19,10 @@ Description: Allows finding inventory of items in nearby stores. This applicatio
 * Install Vagrant (2.1.2 - vagrant_2.1.2_x86_64.dmg)
 * Install plugins (vbguest and hostmanager)
 
-  ```
-  $ vagrant plugin install vagrant-hostmanager
-  $ vagrant plugin install vagrant-vbguest
-  ```
+```shell
+$ vagrant plugin install vagrant-hostmanager
+$ vagrant plugin install vagrant-vbguest
+```
 
 2. Checkout the code
 
