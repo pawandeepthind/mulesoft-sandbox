@@ -57,15 +57,14 @@ Description: Allows finding inventory of items in nearby stores. This applicatio
 
 7. Call API using following specification
 
-  ```
+  ```http
   POST /api/findinstore HTTP/1.1
   Host: localhost:8081
   Content-Type: application/json
   Cache-Control: no-cache
 
   {
-    "country": "US",
-    "postal_code": "Boston",
+    "address", "49 W 27th St New York NY 10001",
     "itemids": [
       "10001",
       "10002"
