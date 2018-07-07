@@ -8,7 +8,7 @@ Machine setup for API Implementation.
 
 *Description:* Allows finding inventory of items in nearby stores. This application contains two components
 
-  1. _API implementation:_ Uses free form address provided in the request, fetches nearest location(lat,lng) using Google Geocode API for the provided address. And then uses this location(lat,lng) to lookup nearby stores using database table stored in db. And then lookup inventory for the items in the request for these nearby stores (limited to 5) and respond back the result in json format.
+  1. _API implementation:_ Find location(lat,lng) using Google Geocode API for the provided address. And then uses this location(lat,lng) to lookup nearby stores in database table stored in db. And then lookup inventory for the items in the request for these nearby stores (limited to 5) and respond back with result.
 
   2. _Supporting Integration:_ This integration
       1. Is used to load inventory in storeitemqty table. This can be setup as full sync once a day.
