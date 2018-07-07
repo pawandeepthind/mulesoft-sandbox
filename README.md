@@ -96,3 +96,24 @@ Description: Allows finding inventory of items in nearby stores. This applicatio
       | user     | vagrant              |
       | password | vagrant              |
       | home dir | /home/vagrant        |
+
+Note:
+
+SQL statement used to find the nearby stores, this query is taken from the following discussion [link] (https://gis.stackexchange.com/questions/31628/find-points-within-a-distance-using-mysql)
+
+```sql
+SELECT
+  id, (
+    3959 * acos (
+      cos ( radians(78.3232) )
+      * cos( radians( lat ) )
+      * cos( radians( lng ) - radians(65.3234) )
+      + sin ( radians(78.3232) )
+      * sin( radians( lat ) )
+    )
+  ) AS distance
+FROM markers
+HAVING distance < 30
+ORDER BY distance
+LIMIT 0 , 20;
+```
