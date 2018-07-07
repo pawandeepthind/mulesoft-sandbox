@@ -99,7 +99,7 @@ Description: Allows finding inventory of items in nearby stores. This applicatio
 
 Note:
 
-SQL statement used to find the nearby stores, this query is taken from the following discussion [link] (https://gis.stackexchange.com/questions/31628/find-points-within-a-distance-using-mysql)
+SQL statement used to find 5 nearby stores, this query is taken from the following discussion [link](https://gis.stackexchange.com/questions/31628/find-points-within-a-distance-using-mysql)
 
 ```sql
 SELECT
@@ -113,7 +113,6 @@ SELECT
     )
   ) AS distance
 FROM markers
-HAVING distance < 30
 ORDER BY distance
-LIMIT 0 , 20;
+LIMIT 0 , 5;
 ```
