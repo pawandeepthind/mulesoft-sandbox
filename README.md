@@ -9,7 +9,7 @@ Description: Allows finding inventory of items in nearby stores. This applicatio
       1. Is used to load inventory in storeitemqty table.
       2. Is used to load store in store table.
 
-# Steps to setup the application demo
+# Steps to setup the application
 
 1. Here are some of the pre-requisite (Note: It is tested on Mac OS X for now)
   * Install latest virtual Box (5.2.12-122591 - VirtualBox-5.2.12-122591-OSX.dmg)
@@ -71,7 +71,7 @@ Description: Allows finding inventory of items in nearby stores. This applicatio
 
   Find the Postman collection link [here](FindInStoreDemo.postman_collection.json) for details on how to call API
 
-## Connectivity Information to the vagrant dev box (in case required)
+## Connectivity Information for MySql and SFTP (in case required)
 . **Links, Credentials and Ports** (Note: ip can be different depending on the ip used in config.yml)
    * MySql DB: 
 
